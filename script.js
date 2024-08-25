@@ -1,3 +1,4 @@
+<script>
   (function() {
     const webAppUrl = 'https://script.google.com/macros/s/AKfycbwKf-nFwfzfHLNACumV16XWTH5RXMwicIFsylqtVPWBU0JgiaxQ0LzY1REFLTi-N_aw/exec';
     
@@ -44,3 +45,4 @@
 
     window.logout = logout;
   })();
+</script>
