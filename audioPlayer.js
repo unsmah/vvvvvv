@@ -28,7 +28,8 @@ class AudioPlayer {
     loadLyrics() {
         fetch(this.vttSrc)
             .then(response => response.text())
-            .then(data => this.parseVTT(data));
+            .then(data => this.parseVTT(data))
+            .catch(error => console.error('Error loading VTT:', error));
     }
 
     parseVTT(data) {
@@ -85,5 +86,5 @@ class AudioPlayer {
     }
 }
 
-// Exporting the AudioPlayer class
+// Export the AudioPlayer class
 export default AudioPlayer;
